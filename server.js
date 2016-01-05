@@ -11,7 +11,7 @@ app.use(express.static(__dirname + '/public'))
 app.use(cors());
 
 var config = module.exports = {};
-config.portNum = 80;
+config.portNum = port;
 
 var portNum = config.portNum;
 

@@ -1,5 +1,7 @@
-var App = angular.module('BoilerApp', [])
-.config(function($routeProvider){
+var App = angular.module('BoilerApp', ['ui.router'])
+.config(function($stateProvider, $urlRouterProvider){
+
+	$urlRouterProvider.otherwise('/');
 
       $stateProvider
 
@@ -13,4 +15,4 @@ var App = angular.module('BoilerApp', [])
 
     });
 
-});
+
